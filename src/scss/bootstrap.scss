@@ -42,7 +42,6 @@
 @import "spinners";
 @import "utilities";
 @import "print";
-@import "myui";
 /*!
  *  추가
  */
@@ -50,11 +49,10 @@
 @import "step";
 @import "pager";
 
-@import "fa";     // font awesome styles
+//@import "fa";     // font awesome styles
 @import "layout"; // my ui layout
-@import "sample"; // sample styles from document.html
 
 // pages
-@import "pages/index";
 @import "pages/_jquery.mCustomScrollbar";
 @import "pages/home";
+@import "pages/element";
