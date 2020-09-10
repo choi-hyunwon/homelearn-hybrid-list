@@ -84,11 +84,7 @@
 		var source = $('#list-template').html(); //jQuery
 		var template = Handlebars.compile(source); //컴파일
 		$('.wrap_scroll')
-			.append(template(data.main))
-			.append(template(data.bySubject))
-			.append(template(data.login))
-			.append(template(data.findId))
-			.append(template(data.attend))
+			.append(template(data.globalLeadership))
     // .append(template(data.login))
     // .append(template(data.main))
     // .append(template(data.detail))
@@ -183,7 +179,8 @@
 		});
 		// sum = sum - 20;
 		var total = (comp / sum) * 100;
-		$('.nav_depth_2 .title h2').html('페이지 목록 : 완료' + total.toFixed(0) + "%");
+		$('.nav_depth_2 .title h2').html('HOMERUN HYBRID LIST');
+		// $('.nav_depth_2 .title h2').html('페이지 목록 : 완료' + total.toFixed(0) + "%");
 	</script>
 
 </body>
