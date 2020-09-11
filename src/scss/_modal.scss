@@ -235,3 +235,7 @@
 @include media-breakpoint-up(xl) {
   .modal-xl { max-width: $modal-xl; }
 }
+
+.close:not(:disabled):not(.disabled):hover, .close:not(:disabled):not(.disabled):focus {
+  opacity: 1;
+}

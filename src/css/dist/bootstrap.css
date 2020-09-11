@@ -12302,18 +12302,18 @@ body {
 Plugin URI: http://manos.malihu.gr/jquery-custom-content-scroller
 */
 /*
-CONTENTS: 
-	1. BASIC STYLE - Plugin's basic/essential CSS properties (normally, should not be edited). 
-	2. VERTICAL SCROLLBAR - Positioning and dimensions of vertical scrollbar. 
+CONTENTS:
+	1. BASIC STYLE - Plugin's basic/essential CSS properties (normally, should not be edited).
+	2. VERTICAL SCROLLBAR - Positioning and dimensions of vertical scrollbar.
 	3. HORIZONTAL SCROLLBAR - Positioning and dimensions of horizontal scrollbar.
-	4. VERTICAL AND HORIZONTAL SCROLLBARS - Positioning and dimensions of 2-axis scrollbars. 
-	5. TRANSITIONS - CSS3 transitions for hover events, auto-expanded and auto-hidden scrollbars. 
-	6. SCROLLBAR COLORS, OPACITY AND BACKGROUNDS 
+	4. VERTICAL AND HORIZONTAL SCROLLBARS - Positioning and dimensions of 2-axis scrollbars.
+	5. TRANSITIONS - CSS3 transitions for hover events, auto-expanded and auto-hidden scrollbars.
+	6. SCROLLBAR COLORS, OPACITY AND BACKGROUNDS
 		6.1 THEMES - Scrollbar colors, opacity, dimensions, backgrounds etc. via ready-to-use themes.
 */
-/* 
+/*
 ------------------------------------------------------------------------------------------------------------------------
-1. BASIC STYLE  
+1. BASIC STYLE
 ------------------------------------------------------------------------------------------------------------------------
 */
 .mCustomScrollbar {
@@ -12344,9 +12344,9 @@ CONTENTS:
   height: auto;
 }
 
-/* 
+/*
 ------------------------------------------------------------------------------------------------------------------------
-2. VERTICAL SCROLLBAR 
+2. VERTICAL SCROLLBAR
 y-axis
 ------------------------------------------------------------------------------------------------------------------------
 */
@@ -12469,9 +12469,9 @@ y-axis
   bottom: 0;
 }
 
-/* 
+/*
 ------------------------------------------------------------------------------------------------------------------------
-3. HORIZONTAL SCROLLBAR 
+3. HORIZONTAL SCROLLBAR
 x-axis
 ------------------------------------------------------------------------------------------------------------------------
 */
@@ -12560,10 +12560,10 @@ x-axis
   right: 0;
 }
 
-/* 
+/*
 ------------------------------------------------------------------------------------------------------------------------
-4. VERTICAL AND HORIZONTAL SCROLLBARS 
-yx-axis 
+4. VERTICAL AND HORIZONTAL SCROLLBARS
+yx-axis
 ------------------------------------------------------------------------------------------------------------------------
 */
 .mCSB_container_wrapper {
@@ -12641,9 +12641,9 @@ yx-axis
   margin-bottom: 0;
 }
 
-/* 
+/*
 ------------------------------------------------------------------------------------------------------------------------
-5. TRANSITIONS  
+5. TRANSITIONS
 ------------------------------------------------------------------------------------------------------------------------
 */
 .mCSB_scrollTools,
@@ -12668,14 +12668,14 @@ yx-axis
   transition: width .2s ease-out .2s, height .2s ease-out .2s,  margin-left .2s ease-out .2s, margin-right .2s ease-out .2s,  margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
 }
 
-/* 
+/*
 ------------------------------------------------------------------------------------------------------------------------
-6. SCROLLBAR COLORS, OPACITY AND BACKGROUNDS  
+6. SCROLLBAR COLORS, OPACITY AND BACKGROUNDS
 ------------------------------------------------------------------------------------------------------------------------
 */
-/* 
+/*
 	----------------------------------------
-	6.1 THEMES 
+	6.1 THEMES
 	----------------------------------------
 	*/
 /* default theme ("light") */
@@ -12746,8 +12746,8 @@ yx-axis
 
 .mCSB_scrollTools .mCSB_buttonUp {
   background-position: 0 0;
-  /* 
-		sprites locations 
+  /*
+		sprites locations
 		light: 0 0, -16px 0, -32px 0, -48px 0, 0 -72px, -16px -72px, -32px -72px
 		dark: -80px 0, -96px 0, -112px 0, -128px 0, -80px -72px, -96px -72px, -112px -72px
 		*/
@@ -12755,7 +12755,7 @@ yx-axis
 
 .mCSB_scrollTools .mCSB_buttonDown {
   background-position: 0 -20px;
-  /* 
+  /*
 		sprites locations
 		light: 0 -20px, -16px -20px, -32px -20px, -48px -20px, 0 -92px, -16px -92px, -32px -92px
 		dark: -80px -20px, -96px -20px, -112px -20px, -128px -20px, -80px -92px, -96px -92px, -112 -92px
@@ -12764,8 +12764,8 @@ yx-axis
 
 .mCSB_scrollTools .mCSB_buttonLeft {
   background-position: 0 -40px;
-  /* 
-		sprites locations 
+  /*
+		sprites locations
 		light: 0 -40px, -20px -40px, -40px -40px, -60px -40px, 0 -112px, -20px -112px, -40px -112px
 		dark: -80px -40px, -100px -40px, -120px -40px, -140px -40px, -80px -112px, -100px -112px, -120px -112px
 		*/
@@ -12773,8 +12773,8 @@ yx-axis
 
 .mCSB_scrollTools .mCSB_buttonRight {
   background-position: 0 -56px;
-  /* 
-		sprites locations 
+  /*
+		sprites locations
 		light: 0 -56px, -20px -56px, -40px -56px, -60px -56px, 0 -128px, -20px -128px, -40px -128px
 		dark: -80px -56px, -100px -56px, -120px -56px, -140px -56px, -80px -128px, -100px -128px, -120px -128px
 		*/
@@ -16505,16 +16505,16 @@ nav.bottomNav.big .verticalLine {
   border-color: #e8843b;
 }
 
-header.semesterSelect {
+header.semester_select {
   color: white;
   background-color: #0dafbd;
 }
 
-header.semesterSelect .flex {
+header.semester_select .flex {
   align-items: center;
 }
 
-header.semesterSelect strong {
+header.semester_select strong {
   font-weight: 700;
   font-size: 20px;
   letter-spacing: -0.5px;
@@ -16529,7 +16529,7 @@ header.semesterSelect strong {
   display: inline-block;
 }
 
-header.semesterSelect .ic_sub_noti {
+header.semester_select .ic_sub_noti {
   margin-left: 24px;
 }
 
@@ -16540,7 +16540,7 @@ header.semesterSelect .ic_sub_noti {
   background-size: 20px;
 }
 
-header.semesterSelect .icon_new {
+header.semester_select .icon_new {
   margin-left: 8px;
 }
 
@@ -16548,7 +16548,7 @@ header strong {
   margin-left: 10.5px;
 }
 
-.headerWrap {
+.wrap_header {
   width: 1280px;
   position: relative;
   display: flex;
@@ -16558,7 +16558,7 @@ header strong {
   justify-content: space-between;
 }
 
-.studyGuide {
+.study_guide {
   background: url("../img/common/btnicon_info.png") no-repeat 8px center #0a8c97;
   background-size: 22px;
   padding: 9px 19px 8.5px 36.5px;
@@ -16616,7 +16616,7 @@ header strong {
   display: block;
 }
 
-.subjectPanel {
+.subject_panel {
   line-height: 1;
   position: relative;
   display: flex;
@@ -16634,7 +16634,7 @@ header strong {
   border-radius: 25px;
 }
 
-.subjectPanel .boxTitle {
+.subject_panel .boxTitle {
   position: absolute;
   top: -16px;
   width: 100%;
@@ -16642,7 +16642,7 @@ header strong {
   padding: 0;
 }
 
-.subjectPanel p {
+.subject_panel p {
   margin: 38px 0 19px;
   display: flex;
   align-items: center;
@@ -16651,7 +16651,7 @@ header strong {
   letter-spacing: -0.4px;
 }
 
-.subjectPanelList {
+.subject_panelList {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 0;
@@ -16665,38 +16665,38 @@ header strong {
   width: 265px;
 }
 
-.subjectPanelList.korean {
+.subject_panelList.korean {
   background-color: #fff0aa;
 }
 
-.subjectPanelList.math {
+.subject_panelList.math {
   background-color: #fddbdb;
 }
 
-.subjectPanelList.english {
+.subject_panelList.english {
   background-color: #c6cdf4;
 }
 
-.subjectPanelList.society {
+.subject_panelList.society {
   background-color: #cdeeaa;
 }
 
-.subjectPanelList.science {
+.subject_panelList.science {
   background-color: #a4dff1;
 }
 
-.subjectPanelList.total {
+.subject_panelList.total {
   background-color: #f7ccee;
 }
 
-.subjectPanelList .subjectIcon {
+.subject_panelList .subjectIcon {
   background-size: 95px;
   margin-top: 56px;
   width: 120px;
   height: 120px;
 }
 
-.subjectPanelList em {
+.subject_panelList em {
   font-style: normal;
   color: black;
   margin-top: 30px;
@@ -16705,7 +16705,7 @@ header strong {
   letter-spacing: -1.4px;
 }
 
-.subjectPanelList button {
+.subject_panelList button {
   width: 210px;
   border-radius: 35px;
   border: 0;
@@ -16715,34 +16715,34 @@ header strong {
   line-height: 60px;
 }
 
-.subjectPanel.short {
+.subject_panel.short {
   height: 414px;
 }
 
-.subjectPanel.short p {
+.subject_panel.short p {
   margin: 28px 0 12px;
   font-size: 15px;
   letter-spacing: -0.38px;
 }
 
-.subjectPanel.short .subjectIcon {
+.subject_panel.short .subjectIcon {
   width: 90px;
   height: 90px;
   margin-top: 46px;
 }
 
-.subjectPanel.short em {
+.subject_panel.short em {
   margin-top: 20px;
   letter-spacing: -1.4px;
 }
 
-.subjectPanel.short button {
+.subject_panel.short button {
   margin: 52px 0 16px;
   height: 60px;
   border-radius: 30px;
 }
 
-.schoolStudyWrap .bannerSection {
+.wrap_home .bannerSection {
   height: 120px;
   width: 295px;
   border: 1px solid #3d99c8;
@@ -16751,40 +16751,40 @@ header strong {
   margin-top: 20px;
 }
 
-.schoolStudyWrap .bannerSection img {
+.wrap_home .bannerSection img {
   width: 275px;
   height: 94px;
 }
 
-.schoolStudyWrap .bannerIndicator li.on {
+.wrap_home .bannerIndicator li.on {
   background-color: #3b7695;
 }
 
-.schoolStudyWrap .bannerIndicator li {
+.wrap_home .bannerIndicator li {
   background-color: #4b98bf;
 }
 
-.subjectPanelList.korean button {
+.subject_panelList.korean button {
   background-color: #f6c43d;
 }
 
-.subjectPanelList.math button {
+.subject_panelList.math button {
   background-color: #ff8786;
 }
 
-.subjectPanelList.english button {
+.subject_panelList.english button {
   background-color: #8d9ae8;
 }
 
-.subjectPanelList.science button {
+.subject_panelList.science button {
   background-color: #48bee2;
 }
 
-.subjectPanelList.society button {
+.subject_panelList.society button {
   background-color: #9bdd55;
 }
 
-.subjectPanelList.total button {
+.subject_panelList.total button {
   background-color: #ef99dd;
 }
 
@@ -16839,7 +16839,7 @@ header strong {
   font-weight: 700;
 }
 
-.schoolStudyWrap {
+.wrap_home {
   flex-grow: 1;
   align-content: flex-start;
   overflow: hidden;
@@ -16848,7 +16848,7 @@ header strong {
   padding: 25px 25px 35px 35px;
 }
 
-header + .schoolStudyWrap {
+header + .wrap_home {
   margin-top: 29px;
 }
 
@@ -16867,25 +16867,25 @@ header + .schoolStudyWrap {
   background-size: contain;
 }
 
-.schoolStudyWrap > *:nth-child(2) i {
+.wrap_home > *:nth-child(2) i {
   background-color: #b8d9f9;
 }
 
-.schoolStudyWrap > *:nth-child(3) i {
+.wrap_home > *:nth-child(3) i {
   background-color: #b0e1bc;
 }
 
-.schoolStudyWrap > *:nth-child(4) i {
+.wrap_home > *:nth-child(4) i {
   background-color: #ebdd84;
 }
 
-.schoolStudyWrap > .flex_column > ul {
+.wrap_home > .flex_column > ul {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 0;
 }
 
-.schoolStudyWrap > .flex_column > ul + ul {
+.wrap_home > .flex_column > ul + ul {
   margin-top: 17px;
 }
 

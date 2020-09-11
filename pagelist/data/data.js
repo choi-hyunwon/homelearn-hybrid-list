@@ -16,3 +16,20 @@ data.globalLeadership = {
     },
 	]
 };
+data.math = {
+  'title': '수학완성',
+  'list': [
+    {
+      'stateClass': 'complete',
+      'url': '수학완성_홈',
+      'category': '홈',
+      'page': '수학완성_홈'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '수학완성_학습안내',
+      'category': '수학완성',
+      'page': '수학완성_학습안내'
+    },
+  ]
+};

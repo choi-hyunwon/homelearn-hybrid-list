@@ -1,0 +1,315 @@
+@charset "utf-8";
+
+:root {
+  --pink: #cd67b2;
+
+  --font1: 'NanumGothic';
+  --font2: 'BMJUA';
+  --font3: 'NanumBarunGothic';
+  --font4: '다음_SemiBold';
+}
+
+.wrap {
+  position: relative;
+  width: 1280px;
+  height: 752px;
+  overflow: hidden;
+}
+
+a, a:link, a:hover, a:visited, a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-size: inherit;
+  color: inherit;
+}
+
+button:focus, input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #999999;
+}
+
+.flex {
+  display: flex;
+}
+.noBorder {
+  border: none;
+}
+
+
+.scrollXMandatory {
+  scroll-snap-type: x mandatory;
+}
+
+.scrollXMandatory > * {
+  scroll-snap-align: start;
+}
+
+.closeBox {
+  width: 35px;
+  height: 35px;
+  background: url("../img/common/icon_Cross.png") no-repeat center;
+  background-size: 35px;
+}
+
+.ic_sub_noti {
+  background: url("../img/common/ic_sub_noti.png") no-repeat center;
+  background-size: 28px;
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+}
+
+.icon_new {
+  background: url("../img/common/icon_New.png") no-repeat center;
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+}
+
+.study_guide {
+  background: url("../img/common/btnicon_info.png") no-repeat 8px center #0a8c97;
+  background-size: 22px;
+  padding: 9px 19px 8.5px 36.5px;
+  border-radius: 17.5px;
+  font-size: 20px;
+  font-family: var(--font2);
+  color: white;
+}
+
+/* S mCustomScrollBar */
+.mCSB_scrollTools .mCSB_draggerContainer {
+  width: 10px;
+  left: auto;
+}
+
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 10px;
+  background-color: rgba(0, 0, 0, 0.5)
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+  width: 10px;
+}
+
+.mCSB_container .element:last-child {
+  margin-bottom: 8px;
+}
+
+.mCSB_inside > .mCSB_container {
+  margin-right: 15px;
+}
+
+.horizonScrollBox {
+  border: 0;
+  padding: 13px 31px;
+  flex-shrink: 0;
+}
+
+.horizonScrollBox .arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -9px;
+  width: 11px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 11px 18px;
+}
+
+.horizonScrollBox .arrow.left {
+  background-image: url("../img/common/leftArrow.png");
+  left: 12px;
+}
+
+.horizonScrollBox .arrow.right {
+  background-image: url("../img/common/rightArrow.png");
+  right: 12px;
+}
+
+.horizonScrollBox ul {
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  width: 330px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: inline-flex;
+}
+
+.horizonScrollBox ul::-webkit-scrollbar {
+  display: none;
+}
+
+.horizonScrollBox li {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  margin: 0 0 0 22px;
+}
+
+.horizonScrollBox li,
+.studyMenuIcon {
+  background-repeat: no-repeat;
+  width: 95px;
+  height: 95px;
+  border-radius: 20px;
+  border: 2px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 65px;
+  font-family: JUA;
+}
+
+.horizonScrollBox li:first-child {
+  margin-left: 0;
+}
+
+.noScrollBar {
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+
+.noScrollBar::-webkit-scrollbar {
+  display: none;
+}
+/* E mCustomScrollBar */
+
+/* S POPUP */
+.modal-dialog {
+  .modal-content {
+    border-radius: 20px;
+    .modal-body {
+      padding: 0 20px 20px;
+    }
+  }
+}
+.modal-big {
+  .modal-dialog {
+    width: 1163px;
+    height: auto;
+    max-width: 1163px !important;
+    min-width: 1163px !important;
+  }
+}
+
+.modal-header {
+  width: calc(100% - 1px);
+  font-family: var(--font1);
+  font-weight: bold;
+  line-height: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  justify-content: center;
+  padding: 0;
+  align-items: center;
+  color: #000000;
+  border-radius: 20px;
+
+  .modal-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    line-height: inherit;
+    font-size: 30px;
+  }
+  .close {
+    position: absolute;
+    right: 30px;
+    top: 27px;
+    padding: 0;
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    background-size: 24px;
+  }
+}
+
+.i-info {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/element/common/i_info.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+  transform: translateY(-1px);
+}
+/* E POPUP */
+
+/* S check box */
+.customCheck {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 26px;
+  height: 26px;
+  border: 2px solid #d5d5d5;
+  border-radius: 50%;
+  vertical-align: middle;
+  &:checked {
+    border: 0;
+    background: url("../img/common/btn_check_sel.png") no-repeat center;
+    background-size: 26px 26px;
+  }
+}
+/* E check box */
+
+/* S select box */
+.customSelect {
+  min-width: 150px;
+  font-size: 20px;
+  font-weight: 700;
+  background: #ffffff url("../img/common/dropdown_icon_down.png") no-repeat 90% center;
+  background-size: 12px;
+  position: relative;
+  border: 2px solid black;
+  border-radius: 22.5px;
+  color: black;
+  height: 45px;
+  line-height: 42px;
+  padding: 0 56px 0 22px;
+
+  ul {
+    display: none;
+    user-select: none;
+    z-index: 1;
+    min-width: 150px;
+    padding: 11px 10px 11px 20px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 22.5px;
+    color: black;
+    width: 100%;
+  }
+  &.disabled {
+    background-image: url("../img/common/dropdown_icon_down_dim.png");
+    border-color: #cccccc;
+    color: #999999;
+    ul {
+      border-color: #cccccc;
+      color: #999999;
+    }
+  }
+  &.down {
+    background-image: url("../img/common/dropdown_icon_up.png");
+    ul {
+      display: block;
+    }
+  }
+}
+/* E select box */

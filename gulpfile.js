@@ -44,6 +44,7 @@ function htmlPage() {
 
 function copyCss() {
 	gulp.src(['src/css/dist/bootstrap.min.css', 'src/css/dist/bootstrap.min.css.map'])
+	gulp.src(['src/css/dist/bootstrap.min.css', 'src/css/dist/bootstrap.min.css.map'])
 		.pipe(gulp.dest('dist/css'));
 	return gulp.src('src/css/dist/fonts/**',)
 		.pipe(gulp.dest('dist/css/fonts'));
@@ -66,6 +67,7 @@ function jsLib() {
 		'src/js/src/bootstrap-datepicker.js',
 		'src/js/src/bootstrap-datepicker.ko.min.js',
 		'src/js/src/jquery.mCustomScrollbar.concat.min.js',
+		'src/js/src/common.js',
 	];
 	return gulp.src(sourceLib)
 		.pipe(concat('bundle.js'))

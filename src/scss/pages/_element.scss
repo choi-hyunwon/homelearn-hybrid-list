@@ -1,8 +1,3 @@
-@charset "utf-8";
-
-:root {
-  --pink: #cd67b2;
-}
 
 .imgHide {
   position: absolute;
@@ -14,12 +9,20 @@
   z-index: -1;
 }
 
-.bg-pink {
-  background-color: #cd67b2;
+.math-bg {
+  background-color: #4b91e0 !important;
 }
-
+.math-label-bg {
+  background-color: #3c74b3 !important;
+}
+.math-border-color {
+  border-color: #2373cd !important;
+}
+.bg-pink {
+  background-color: #cd67b2 !important;
+}
 .bg-grey {
-  background-color: #dedede;
+  background-color: #dedede !important;
 }
 
 .header-element {
@@ -77,7 +80,7 @@
   }
 }
 
-/* 검색 영역 */
+/* S 검색 영역  */
 .input-group {
   &.search {
     height: 46px;
@@ -100,17 +103,13 @@
     height: 25px;
   }
 }
+/* E 검색 영역  */
 
-.content-element {
-  padding-top: 15px;
-  overflow: hidden;
-}
-
-.tabs {
-  float: left;
-
-  &.global_leadership {
+/* S 글로벌 리더십  */
+.global_leadership {
+  &.tabs {
     width: 240px;
+    float: left;
 
     .tab {
       border-top: 1px solid #cacaca;
@@ -135,7 +134,7 @@
         width: 100%;
         height: 50px;
         font-size: 17px;
-        color: #949494;
+        color: #6c6c6c;
         border-bottom: 1px solid #cacaca;
         padding-left: 20px;
         align-items: center;
@@ -154,20 +153,19 @@
       }
     }
   }
-}
-
-.tabs-panel-box {
-  &.global_leadership {
+  &.tabs-panel-box {
     float: left;
     width: calc(100% - 255px);
-    height: 637px;
+    height: 668px;
     background-color: #ffffff;
     border-top-left-radius: 22px;
     margin-left: 15px;
     padding: 25px 13px 25px 27px;
+
     .scroll {
-      height: 600px;
+      height: 641px;
     }
+
     .gl-movie {
       .gl-movie-item {
         margin-bottom: 28px;
@@ -175,6 +173,7 @@
         .gl-top {
           display: flex;
           margin-bottom: 12px;
+
           .title {
             font-size: 26px;
             color: var(--pink);
@@ -185,15 +184,18 @@
             align-items: center;
             margin-left: auto;
             font-size: 18px;
+
             .i-img {
               margin-left: 10px;
             }
           }
         }
+
         .gl-content {
           .movie {
             float: left;
             margin-right: 25px;
+
             .img {
               position: relative;
               width: 219px;
@@ -202,10 +204,12 @@
               overflow: hidden;
               border-radius: 25px 25px 0 25px;
               margin-bottom: 9px;
+
               img {
                 width: 100%;
                 height: 100%;
               }
+
               .time {
                 position: absolute;
                 width: 67px;
@@ -219,6 +223,7 @@
                 font-size: 14px;
               }
             }
+
             .title {
               width: 220px;
               overflow: hidden;
@@ -227,35 +232,44 @@
               font-size: 18px;
               margin-bottom: 5px;
             }
+
             .category {
               font-size: 16px;
               color: #aaaaaa;
               margin-bottom: 3px;
             }
+
             .v-count {
               display: flex;
+
               .count {
                 display: flex;
                 align-items: center;
                 font-size: 16px;
                 color: #aaaaaa;
               }
+
               .value {
                 display: flex;
                 align-items: center;
                 margin-left: auto;
                 font-size: 16px;
                 color: #aaaaaa;
+
                 a {
                   display: inline-block;
+
                   .i-heart {
                     display: inline-block;
                     background-image: url("../img/element/common/heart_nor.png");
                     background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: bottom;
                     width: 23px;
                     height: 23px;
                     margin-left: 6px;
                   }
+
                   &.active {
                     .i-heart {
                       background-image: url("../img/element/common/heart_focus.png");
@@ -264,6 +278,7 @@
                 }
               }
             }
+
             &:last-child {
               margin-right: 0;
             }
@@ -273,3 +288,5 @@
     }
   }
 }
+/* E 글로벌 리더십  */
+
