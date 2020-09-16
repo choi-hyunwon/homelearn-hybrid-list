@@ -2,8 +2,34 @@
 <html lang="ko">
 @@include("include/head.html", { title : "수학완성" })
 <body>
+<header id="menubar">
+  <div class="left_side">
+    <i class="menubar_menu_btn"></i>
+    <div class="scrollWrap">
+      <div class="menu_item" data-href="#">오늘의 학습</div>
+      <div class="menu_item" data-href="#">학교공부</div>
+      <div class="menu_item on" data-href="#">수학완성</div>
+      <div class="menu_item" data-href="#">영어완성</div>
+      <div class="menu_item" data-href="#">특별학습</div>
+      <!--        <div class="menu_item" data-href="#">국어누리</div>-->
+      <!--        <div class="menu_item" data-href="#">수학누리</div>-->
+      <!--        <div class="menu_item" data-href="#">영어누리</div>-->
+      <!--        <div class="menu_item" data-href="#">특별학습</div>-->
+    </div>
+    <div data-href="#" class="roundButton">글로벌리더십</div>
+  </div>
+  <div class="right_side">
+    <i class="menubar_battery"></i>
+    <span class="time">오후 01:36</span>
+    <i class="menubar_bell"><label class="noti">7</label></i>
+    <i class="menubar_personal"></i>
+    <i class="menubar_wifi"></i>
+    <i class="menubar_config"></i>
+    <i class="menubar_quit"></i>
+  </div>
+</header>
 <div class="wrap_flex lightBlueBg">
-  <header class="semester_select math-bg">
+  <div class="semester_select math-bg">
     <div class="wrap_header">
       <div class="flex">
         <div class="customSelect"><span>4학년 1학기</span>
@@ -29,7 +55,7 @@
       </div>
       <div class="study_guide math-label-bg"><a href="#" class="d-block">학습안내</a></div>
     </div>
-  </header>
+  </div>
   <div class="wrap_home">
     <div class="subject_panel math-bg math-border-color">
       <div class="boxTitle mathTitle01"></div>
@@ -157,18 +183,18 @@
         <li><a href="#"><i class="i-size math-12"></i>5단원</a></li>
         <li class=""><a href="#"><i class="i-size math-12"></i>6단원</a></li>
       </ul>
-      <div class="banner_event _bannerEvent ml-4">
-        <div>
-          <a href="#"><img src="../img/element/math/temp/banner_event.png"></a>
-          <a href="#"><img src="../img/element/math/temp/banner_event.png"></a>
-          <a href="#"><img src="../img/element/math/temp/banner_event.png"></a>
-        </div>
-        <ul class="bannerIndicator">
-          <li class=""></li>
-          <li class="on"></li>
-          <li></li>
-        </ul>
-      </div>
+<!--      <div class="banner_event _bannerEvent ml-4">-->
+<!--        <div>-->
+<!--          <a href="#"><img src="../img/element/math/temp/banner_event.png"></a>-->
+<!--          <a href="#"><img src="../img/element/math/temp/banner_event.png"></a>-->
+<!--          <a href="#"><img src="../img/element/math/temp/banner_event.png"></a>-->
+<!--        </div>-->
+<!--        <ul class="bannerIndicator">-->
+<!--          <li class=""></li>-->
+<!--          <li class="on"></li>-->
+<!--          <li></li>-->
+<!--        </ul>-->
+<!--      </div>-->
     </div>
   </div>
 </div>

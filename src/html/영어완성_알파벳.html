@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include("include/head.html", { title : "영어완성" })
+<script type="text/javascript">
+  $(document).ready(function(){
+    // 상단 탭
+    $('._tabTop li a').click(function(){
+      $("._tabContent").removeClass('active');
+      $("._tabContent[data-id='"+$(this).attr('data-id')+"']").addClass("active");
+      $("._tabTop li a").parent().removeClass('active');
+      $(this).parent().addClass('active');
+    });
+    // 단계 탭
+    $('._tabStep li a').click(function(){
+      $("._tabMenu").removeClass('active');
+      $("._tabMenu[data-id='"+$(this).attr('data-id')+"']").addClass("active");
+      $("._tabStep li a").parent().removeClass('active');
+      $(this).parent().addClass('active');
+    });
+    // 메뉴 탭
+    $('._tabMenu li > a').click(function(){
+      $("._tabPanel").removeClass('active');
+      $("._tabPanel[data-id='"+$(this).attr('data-id')+"']").addClass("active");
+      $("._tabMenu li > a").parent().removeClass('active');
+      $(this).parent().addClass('active');
+    });
+  })
+</script>
+<body>
+<!--<img src="../../doc/01_초등_캡처/초등%20영어완성%20캡쳐/Screenshot_20200908-133721.png" class="imgHide" alt="">-->
+<div class="wrap">
+  <div class="wrap_english">
+    <div class="area_top">
+      <div class="title"><img src="../img/element/english/common/title_eng.png" alt=""></div>
+      <a href="#" class="closeBtn"><img src="../img/element/english/common/btn_close.png" alt=""></a>
+    </div>
+    <div class="tab_top _tabTop">
+      <ul class="clearfix">
+        <li class="active"><a href="#" data-id="tab1">알파벳</a></li>
+        <li><a href="#" data-id="tab2">파닉스</a></li>
+        <li><a href="#" data-id="tab3">영단어 암기</a></li>
+        <li><a href="#" data-id="tab4">영역별 학습</a></li>
+        <li><a href="#" data-id="tab5">영어 교과 강의</a></li>
+        <li><a href="#" data-id="tab6">영어신문</a></li>
+        <li><a href="#" data-id="tab7">영어동화</a></li>
+        <li><a href="#" data-id="tab8">영어송</a></li>
+        <li><a href="#" data-id="tab9">인기 DVD</a></li>
+      </ul>
+    </div>
+    <div class="tab_content _tabContent" data-id="tab1">
+      <div class="area-title">
+        <div class="tit">뚝딱뚝딱 ABC<span class="total">(전체 26강)</span></div>
+      </div>
+      <div class="list-class">
+        <ul>
+          <li>
+            <div class="info">
+              <span class="class">1강</span>
+              <span class="tit">A-Ant & Apple</span>
+            </div>
+            <span class="cTime"><i class="i-tv"></i>05분</span>
+            <div class="area-btn">
+              <a href="#" class="btn-view"><span class="sr-only">강의 보기</span></a>
+              <a href="#" class="btn-box"><span class="sr-only">내공상자 담기</span></a>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <span class="class">2강</span>
+              <span class="tit">A-Ant & Apple</span>
+            </div>
+            <span class="cTime"><i class="i-tv"></i>05분</span>
+            <div class="area-btn">
+              <a href="#" class="btn-view"><span class="sr-only">강의 보기</span></a>
+              <a href="#" class="btn-box"><span class="sr-only">내공상자 담기</span></a>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <span class="class">3강</span>
+              <span class="tit">A-Ant & Apple</span>
+            </div>
+            <span class="cTime"><i class="i-tv"></i>05분</span>
+            <div class="area-btn">
+              <a href="#" class="btn-view"><span class="sr-only">강의 보기</span></a>
+              <a href="#" class="btn-box"><span class="sr-only">내공상자 담기</span></a>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <span class="class">4강</span>
+              <span class="tit">A-Ant & Apple</span>
+            </div>
+            <span class="cTime"><i class="i-tv"></i>05분</span>
+            <div class="area-btn">
+              <a href="#" class="btn-view"><span class="sr-only">강의 보기</span></a>
+              <a href="#" class="btn-box"><span class="sr-only">내공상자 담기</span></a>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <span class="class">5강</span>
+              <span class="tit">A-Ant & Apple</span>
+            </div>
+            <span class="cTime"><i class="i-tv"></i>05분</span>
+            <div class="area-btn">
+              <a href="#" class="btn-view"><span class="sr-only">강의 보기</span></a>
+              <a href="#" class="btn-box"><span class="sr-only">내공상자 담기</span></a>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <span class="class">6강</span>
+              <span class="tit">A-Ant & Apple</span>
+            </div>
+            <span class="cTime"><i class="i-tv"></i>05분</span>
+            <div class="area-btn">
+              <a href="#" class="btn-view"><span class="sr-only">강의 보기</span></a>
+              <a href="#" class="btn-box"><span class="sr-only">내공상자 담기</span></a>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <span class="class">7강</span>
+              <span class="tit">A-Ant & Apple</span>
+            </div>
+            <span class="cTime"><i class="i-tv"></i>05분</span>
+            <div class="area-btn">
+              <a href="#" class="btn-view"><span class="sr-only">강의 보기</span></a>
+              <a href="#" class="btn-box"><span class="sr-only">내공상자 담기</span></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="area-pagination">
+        <ul class="pagination pagination-circle" id="pagination">
+          <li class="page-item disabled">
+            <a class="page-link page-arrow" aria-label="Previous">
+              <span aria-hidden="true"></span>
+            </a>
+          </li>
+          <li class="page-item active"><a class="page-link">1</a></li>
+          <li class="page-item"><a class="page-link">2</a></li>
+          <li class="page-item"><a class="page-link">3</a></li>
+          <li class="page-item"><a class="page-link">4</a></li>
+          <li class="page-item">
+            <a class="page-link page-arrow" aria-label="Next">
+              <span aria-hidden="true"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <script>
+        $('#pagination').twbsPagination({
+            totalPages: 10,
+            visiblePages: 4,
+            first: '',
+            prev: '<i class="i-arrow-left"><span class="sr-only">prev</span>',
+            next: '<i class="i-arrow-right"><span class="sr-only">next</span>',
+            last :'',
+            onPageClick: function (event, page) {
+              $('#page-content')
+                .text('Page ' + page)
+            }
+          })
+      </script>
+    </div>
+  </div>
+</div>
+</body>
+</html>

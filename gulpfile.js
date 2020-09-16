@@ -65,6 +65,7 @@ function jsLib() {
 		'src/js/src/jquery.js',
 		'src/js/src/bootstrap.min.js',
 		'src/js/src/bootstrap-datepicker.js',
+    'src/js/src/jquery.twbsPagination.js',
 		'src/js/src/bootstrap-datepicker.ko.min.js',
 		'src/js/src/jquery.mCustomScrollbar.concat.min.js',
 		'src/js/src/common.js',

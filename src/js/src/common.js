@@ -77,6 +77,16 @@ front.common = (function () {
       console.log(value);
     });
 
+    $("body").on("click", "[data-href]", function(){
+      var href = $(this).attr("data-href");
+      if (!href) return;
+      href = href.split(",").map(function(item){ return item.trim();});
+      if (href.length > 1) {
+        window.open(href[0], href[1]);
+      } else {
+        location.href = href[0];
+      }
+    });
   };
 
   return {

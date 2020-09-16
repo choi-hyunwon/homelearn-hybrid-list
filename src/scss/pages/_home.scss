@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* S 홈 화면 - wrap */
+/* S 홈 화면  */
 .wrap_flex {
   display: flex;
   flex-direction: column;
@@ -11,12 +11,19 @@
   &.lightBlueBg {
     background-color: #e2eeee;
   }
+  &.lightPurple {
+    background-color: #ebeaf2;
+  }
 }
 
-/* E 홈 화면 - wrap */
+
 
 /* S 홈 화면 - 헤더 */
-header {
+.semester_select {
+  color: white;
+  background-color: #0dafbd;
+  margin-bottom: 29px;
+
   .wrap_header {
     width: 1280px;
     position: relative;
@@ -27,33 +34,24 @@ header {
     justify-content: space-between;
   }
 
-  &.semester_select {
-    color: white;
-    background-color: #0dafbd;
-
-    .flex {
-      align-items: center;
-    }
-
-    strong {
-      font-weight: 700;
-      font-size: 20px;
-      letter-spacing: -0.5px;
-      white-space: nowrap;
-      margin-left: 10.5px;
-    }
-
-    .ic_sub_noti {
-      margin-left: 24px;
-    }
-
-    .icon_new {
-      margin-left: 8px;
-    }
+  .flex {
+    align-items: center;
   }
 
-  & + .wrap_home {
-    margin-top: 29px;
+  strong {
+    font-weight: 700;
+    font-size: 19px;
+    letter-spacing: 0.7px;
+    white-space: nowrap;
+    margin-left: 10.5px;
+  }
+
+  .ic_sub_noti {
+    margin-left: 24px;
+  }
+
+  .icon_new {
+    margin-left: 8px;
   }
 }
 /* E 홈 화면 - 헤더 */
@@ -116,7 +114,7 @@ header {
       padding: 10px;
       height: 80px;
       background-color: #e5e5e5;
-      font-family: var(--font1);
+      font-family: var(--nanumgothic);
       border-radius: 15px;
       font-size: 15px;
       letter-spacing: -0.75px;
@@ -141,7 +139,7 @@ header {
       flex-shrink: 1;
       flex-basis: 0;
       border-bottom: 1px solid #dfdfdf;
-      font-family: var(--font2);
+      font-family: var(--bmjua);
       font-size: 25px;
 
       .tit {
@@ -153,7 +151,7 @@ header {
         bottom: 24px;
         left: 60px;
         font-size: 15px;
-        font-family: var(--font1);
+        font-family: var(--nanumgothic);
         font-weight: bold;
       }
 
@@ -301,7 +299,7 @@ header {
               display: block;
               font-size: 26px;
               line-height: 28px;
-              font-family: var(--font2);
+              font-family: var(--bmjua);
             }
           }
         }
@@ -332,7 +330,7 @@ header {
   flex-shrink: 1;
   flex-basis: 0;
   box-shadow: 1.7px 1.7px 3px rgba(0, 0, 0, .3);
-  font-family: var(--font2);
+  font-family: var(--bmjua);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -391,57 +389,59 @@ header {
   }
 }
 
-/* S banner Event */
-.banner_event {
-  position: relative;
-  padding: 12px 9px 13px;
-  margin-top: 9px;
-  height: 128px;
+  /* S banner Event */
+  .banner_event {
+    position: relative;
+    padding: 12px 9px 13px;
+    margin-top: 9px;
+    height: 128px;
 
-  & > div {
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -ms-overflow-style: none;
-    overflow: -moz-scrollbars-none;
+    & > div {
+      display: flex;
+      overflow-x: auto;
+      overflow-y: hidden;
+      -ms-overflow-style: none;
+      overflow: -moz-scrollbars-none;
 
-    &::-webkit-scrollbar {
-      display: none;
-    }
-
-    img {
-      scroll-snap-align: start;
-      width: 244px;
-      height: 100px;
-      flex-basis: auto;
-      flex-shrink: 0;
-    }
-  }
-
-  .bannerIndicator {
-    display: flex;
-    position: absolute;
-    top: 13px;
-    right: 13px;
-
-    li {
-      transition: width 0.3s, background-color 0.5s;
-      margin-left: 7px;
-      flex: 0 0 auto;
-      background-color: #e5e5e5;
-      width: 10px;
-      height: 10px;
-      border-radius: 10px;
-
-      &:first-child {
-        margin-left: 0;
+      &::-webkit-scrollbar {
+        display: none;
       }
 
-      &.on {
-        background-color: #b2b2b2;
-        width: 25px;
+      img {
+        scroll-snap-align: start;
+        width: 244px;
+        height: 100px;
+        flex-basis: auto;
+        flex-shrink: 0;
+      }
+    }
+
+    .bannerIndicator {
+      display: flex;
+      position: absolute;
+      top: 13px;
+      right: 13px;
+
+      li {
+        transition: width 0.3s, background-color 0.5s;
+        margin-left: 7px;
+        flex: 0 0 auto;
+        background-color: #e5e5e5;
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &.on {
+          background-color: #b2b2b2;
+          width: 25px;
+        }
       }
     }
   }
-}
-/* E banner Event */
+  /* E banner Event */
+
+/* E 홈 화면  */

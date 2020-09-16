@@ -3,10 +3,11 @@
 :root {
   --pink: #cd67b2;
 
-  --font1: 'NanumGothic';
-  --font2: 'BMJUA';
-  --font3: 'NanumBarunGothic';
-  --font4: '다음_SemiBold';
+  --nanumgothic: 'NanumGothic';
+  --bmjua: 'BMJUA';
+  --nanumBarun: 'NanumBarunGothic';
+  --daum: '다음_SemiBold';
+  --godo: 'Godo';
 }
 
 .wrap {
@@ -40,13 +41,27 @@ input::placeholder {
   color: #999999;
 }
 
+[data-href] {
+  cursor: pointer;
+}
+
 .flex {
   display: flex;
 }
+
+.imgHide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1280px;
+  height: auto;
+  opacity: .4;
+  z-index: 10000;
+}
+
 .noBorder {
   border: none;
 }
-
 
 .scrollXMandatory {
   scroll-snap-type: x mandatory;
@@ -79,12 +94,16 @@ input::placeholder {
 }
 
 .study_guide {
-  background: url("../img/common/btnicon_info.png") no-repeat 8px center #0a8c97;
+  background: url("../img/common/btnicon_info.png") no-repeat 18px center #0a8c97;
   background-size: 22px;
-  padding: 9px 19px 8.5px 36.5px;
+  width: 128px;
+  height: 34px;
+  line-height: 35px;
+  text-align: right;
+  padding: 0 15px;
   border-radius: 17.5px;
   font-size: 20px;
-  font-family: var(--font2);
+  font-family: var(--bmjua);
   color: white;
 }
 
@@ -204,7 +223,7 @@ input::placeholder {
 
 .modal-header {
   width: calc(100% - 1px);
-  font-family: var(--font1);
+  font-family: var(--nanumgothic);
   font-weight: bold;
   line-height: 100px;
   height: 100px;
@@ -268,7 +287,7 @@ input::placeholder {
 
 /* S select box */
 .customSelect {
-  min-width: 150px;
+  min-width: 180px;
   font-size: 20px;
   font-weight: 700;
   background: #ffffff url("../img/common/dropdown_icon_down.png") no-repeat 90% center;
@@ -311,5 +330,40 @@ input::placeholder {
       display: block;
     }
   }
+  &.selected {
+    background-image: none;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 0;
+  }
 }
 /* E select box */
+
+/* S 홈 - 상단 바 */
+#menubar { width: 1280px; font-family: var(--bmjua); font-size: 22.5px; color: #414141; padding: 0 27px 0 20px; height: 50px; background-color: white; box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.15); display:flex; justify-content: space-between; align-items: center; }
+#menubar div.left_side, #menubar div.right_side { display: flex; align-items: center; height: 100%; }
+#menubar div.left_side .scrollWrap { margin: 0 18px; width: 540px;  display: flex; align-self: stretch; align-items: center; overflow-x: auto; }
+#menubar div.left_side .scrollWrap { -ms-overflow-style: none; overflow: -moz-scrollbars-none; }
+#menubar div.left_side .scrollWrap::-webkit-scrollbar { display: none; }
+
+#menubar .menu_item { align-items: center; display: flex; flex-shrink: 0; height: 100%; padding: 5px 0; margin-left: 35px; letter-spacing: -0.8px; }
+#menubar .menu_item:first-child { margin-left: 0; }
+#menubar .menu_item.on { color: #8471d5; /*border-bottom: 5px solid #0fb2f3;*/ padding-bottom: 0; }
+#menubar > div.right_side i { margin-left: 11px; align-items: center; }
+
+.menubar_menu_btn { background: url("../img/common/menubar_menu_btn.png") no-repeat center; background-size: contain; width: 23px; height: 18px;  }
+.menubar_bell { background: url("../img/common/menubar_bell.png") no-repeat center; background-size: contain; width: 23px; height: 27px;  }
+.menubar_config { background: url("../img/common/menubar_config.png") no-repeat center; background-size: contain; width: 29px; height: 29px;  }
+.menubar_personal { background: url("../img/common/menubar_personal.png") no-repeat center; background-size: contain; width: 23px; height: 27px;  }
+.menubar_quit { background: url("../img/common/menubar_quit.png") no-repeat center; background-size: contain; width: 26px; height: 29px;  }
+.menubar_wifi { background: url("../img/common/menubar_wifi.png") no-repeat center; background-size: contain; width: 33px; height: 23px;  }
+.menubar_battery { background: url("../img/common/menubar_battery.png") no-repeat center; background-size: contain; width: 15px; height: 25px;  }
+
+
+#menubar i { position: relative;}
+.noti { display: block; background-color: #ff4040; border-radius: 20px; color: white; font-size: 14px; font-style: normal; font-family: var(--bmjua); padding: 4px 6px 1px; }
+#menubar .noti { position: absolute; bottom: -4px; right: 10px; }
+#menubar .time { margin: 0 28px 0 12px; font-family: var(--nanumgothic); font-size: 17px; color: rgb(77, 77, 77); font-weight: bold;  }
+#menubar .roundButton {padding: 0 14px; align-self: center;font-size: 18px;color: #414141; border: 3px solid #d9ecd0; border-radius: 20px;background-color: white;height: 34px;line-height: 28px;}
+
+/* E 홈 - 상단 바 */
