@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include("include/head.html", { title : "영어완성" })
+<body>
+<!--<img src="../../doc/01_초등_캡처/초등%20영어완성%20캡쳐/Screenshot_20200908-133724.png" class="imgHide" alt="">-->
+<div class="wrap">
+  <div class="wrap_english">
+    <div class="area_top">
+      <div class="title"><img src="../img/element/english/common/title_eng.png" alt=""></div>
+      <a href="#" class="closeBtn"><img src="../img/element/english/common/btn_close.png" alt=""></a>
+    </div>
+    <div class="tab_top _tabTop">
+      <ul class="clearfix">
+        <li><a href="#" data-id="tab1">알파벳</a></li>
+        <li class="active"><a href="#" data-id="tab2">파닉스</a></li>
+        <li><a href="#" data-id="tab3">영단어 암기</a></li>
+        <li><a href="#" data-id="tab4">영역별 학습</a></li>
+        <li><a href="#" data-id="tab5">영어 교과 강의</a></li>
+        <li><a href="#" data-id="tab6">영어신문</a></li>
+        <li><a href="#" data-id="tab7">영어동화</a></li>
+        <li><a href="#" data-id="tab8">영어송</a></li>
+        <li><a href="#" data-id="tab9">인기 DVD</a></li>
+      </ul>
+    </div>
+    <div class="tab_content phonics _tabContent" data-id="tab1">
+      <div class="side_menu _sideMenu">
+        <ul>
+          <li class="active"><a href="#" data-id="menu1">학습안내</a></li>
+          <li><a href="#" data-id="menu2">1단계<br/><span>알파벳</span></a></li>
+          <li><a href="#" data-id="menu3">2단계<br/><span>단모음</span></a></li>
+          <li><a href="#" data-id="menu4">3단계<br/><span>장모음</span></a></li>
+          <li><a href="#" data-id="menu5">4단계<br/><span>이중자모음</span></a></li>
+        </ul>
+      </div>
+      <div class="menu-content" data-id="menu1">
+        <div class="ph-intro">
+          <a href="#" class="btn-reading"><span class="sr-only">파닉스 읽기표</span></a>
+          <a href="#" class="btn-word"><span class="sr-only">홈런파닉스 단어 리스트</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  $(document).ready(function(){
+    // 상단 탭
+    $('._tabTop li a').click(function(){
+      $("._tabContent").removeClass('active');
+      $("._tabContent[data-id='"+$(this).attr('data-id')+"']").addClass("active");
+      $("._tabTop li a").parent().removeClass('active');
+      $(this).parent().addClass('active');
+    });
+    // 사이드 메뉴
+    $('._sideMenu li a').click(function(){
+      $("._menuContent").removeClass('active');
+      $("._menuContent[data-id='"+$(this).attr('data-id')+"']").addClass("active");
+      $("._sideMenu li a").parent().removeClass('active');
+      $(this).parent().addClass('active');
+    });
+  })
+</script>
+</body>
+</html>

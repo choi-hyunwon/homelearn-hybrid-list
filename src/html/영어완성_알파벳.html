@@ -1,33 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 @@include("include/head.html", { title : "영어완성" })
-<script type="text/javascript">
-  $(document).ready(function(){
-    // 상단 탭
-    $('._tabTop li a').click(function(){
-      $("._tabContent").removeClass('active');
-      $("._tabContent[data-id='"+$(this).attr('data-id')+"']").addClass("active");
-      $("._tabTop li a").parent().removeClass('active');
-      $(this).parent().addClass('active');
-    });
-    // 단계 탭
-    $('._tabStep li a').click(function(){
-      $("._tabMenu").removeClass('active');
-      $("._tabMenu[data-id='"+$(this).attr('data-id')+"']").addClass("active");
-      $("._tabStep li a").parent().removeClass('active');
-      $(this).parent().addClass('active');
-    });
-    // 메뉴 탭
-    $('._tabMenu li > a').click(function(){
-      $("._tabPanel").removeClass('active');
-      $("._tabPanel[data-id='"+$(this).attr('data-id')+"']").addClass("active");
-      $("._tabMenu li > a").parent().removeClass('active');
-      $(this).parent().addClass('active');
-    });
-  })
-</script>
 <body>
-<!--<img src="../../doc/01_초등_캡처/초등%20영어완성%20캡쳐/Screenshot_20200908-133721.png" class="imgHide" alt="">-->
 <div class="wrap">
   <div class="wrap_english">
     <div class="area_top">
@@ -167,5 +141,16 @@
     </div>
   </div>
 </div>
+<script type="text/javascript">
+  $(document).ready(function(){
+    // 상단 탭
+    $('._tabTop li a').click(function(){
+      $("._tabContent").removeClass('active');
+      $("._tabContent[data-id='"+$(this).attr('data-id')+"']").addClass("active");
+      $("._tabTop li a").parent().removeClass('active');
+      $(this).parent().addClass('active');
+    });
+  })
+</script>
 </body>
 </html>

@@ -143,6 +143,7 @@
   }
 }
 
+/* S 영어완성 - 알파벳 */
 .wrap_english {
   position: relative;
   display: block;
@@ -237,6 +238,7 @@
         }
       }
     }
+
     .list-class {
       padding: 0 7px;
       li {
@@ -345,6 +347,74 @@
     }
   }
 }
+/* E 영어완성 - 알파벳 */
+
+/* S 영어완성 - 파닉스 */
+.wrap_english {
+  .tab_content {
+    &.phonics {
+      .side_menu {
+        width: 186px;
+        height: 603px;
+        padding-left: 6px;
+        ul {
+          width: 100%;
+          height: 100%;
+          background-color: #fbc441;
+          border-radius: 0 0 0 15px;
+          li {
+            width: 100%;
+            height: 83px;
+            border-bottom: 1px solid #f1a831;
+            border-top: 1px solid #fdd477;
+            a {
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+              height: 100%;
+              text-align: center;
+              font-size: 23px;
+              font-weight: 900;
+              color: #4d0000;
+              align-items: center;
+              justify-content: center;
+              span {
+                display: block;
+                font-size: 22px;
+                font-weight: bold;
+                padding-top: 3px;
+              }
+            }
+            &.active {
+              background-color: #8529cd;
+              a {
+                color: #ffffff;
+                font-size: 25px;
+                span {
+                  font-size: 22px;
+                }
+              }
+            }
+            &:first-child {
+              height: 55px;
+              border-top: 0;
+            }
+          }
+        }
+      }
+      .menu-content {
+        .ph-intro {
+          width: 200px;
+          height: 200px;
+          background-image: url("../img/element/english/phonics/info.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}
+/* E 영어완성 - 파닉스 */
 
 /* 아이콘 */
 i.i-tv {
