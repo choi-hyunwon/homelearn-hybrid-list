@@ -7,6 +7,7 @@
   height: 702px;
   width: 1280px;
   overflow: hidden;
+  margin: 0 auto;
 
   &.lightBlueBg {
     background-color: #e2eeee;
@@ -162,6 +163,9 @@
 
       &.noBorder {
         border: 0;
+      }
+      &:last-child {
+        border-bottom: 0;
       }
     }
 

@@ -15,6 +15,7 @@
   width: 1280px;
   height: 752px;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 a, a:link, a:hover, a:visited, a:active {
@@ -51,7 +52,8 @@ input::placeholder {
 
 .imgHide {
   position: absolute;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   top: 0;
   width: 1280px;
   height: auto;
@@ -314,6 +316,9 @@ input::placeholder {
     border-radius: 22.5px;
     color: black;
     width: 100%;
+    li:active {
+      background-color: #f2f2f2;
+    }
   }
   &.disabled {
     background-image: url("../img/common/dropdown_icon_down_dim.png");
@@ -340,7 +345,7 @@ input::placeholder {
 /* E select box */
 
 /* S 홈 - 상단 바 */
-#menubar { width: 1280px; font-family: var(--bmjua); font-size: 22.5px; color: #414141; padding: 0 27px 0 20px; height: 50px; background-color: white; box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.15); display:flex; justify-content: space-between; align-items: center; }
+#menubar { width: 1280px; margin: 0 auto; font-family: var(--bmjua); font-size: 22.5px; color: #414141; padding: 0 27px 0 20px; height: 50px; background-color: white; box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.15); display:flex; justify-content: space-between; align-items: center; }
 #menubar div.left_side, #menubar div.right_side { display: flex; align-items: center; height: 100%; }
 #menubar div.left_side .scrollWrap { margin: 0 18px; width: 540px;  display: flex; align-self: stretch; align-items: center; overflow-x: auto; }
 #menubar div.left_side .scrollWrap { -ms-overflow-style: none; overflow: -moz-scrollbars-none; }
@@ -367,3 +372,18 @@ input::placeholder {
 #menubar .roundButton {padding: 0 14px; align-self: center;font-size: 18px;color: #414141; border: 3px solid #d9ecd0; border-radius: 20px;background-color: white;height: 34px;line-height: 28px;}
 
 /* E 홈 - 상단 바 */
+
+/* scroll 투명 */
+.scroll.transparent {
+  .mCSB_scrollTools .mCSB_draggerRail {
+    background-color: transparent !important;
+  }
+  .mCustomScrollBox {
+    .mCSB_container {
+      margin-right: 0;
+    }
+  }
+  .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: transparent !important;
+  }
+}

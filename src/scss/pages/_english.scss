@@ -143,6 +143,7 @@
   }
 }
 
+/* S 영어완성 - 알파벳 */
 .wrap_english {
   position: relative;
   display: block;
@@ -214,13 +215,16 @@
   }
 
   .tab_content {
-    padding: 0 10px;
+    width: 1247px;
+    margin: 0 auto;
+    overflow: hidden;
     .area-title {
       width: 1261px;
       height: 61px;
       background-image: url("../img/element/english/common/bg_top.png");
       background-repeat: no-repeat;
       background-size: cover;
+      background-position-x: -6px;
       .tit {
         font-family: var(--daum);
         font-size: 26px;
@@ -237,8 +241,8 @@
         }
       }
     }
+
     .list-class {
-      padding: 0 7px;
       li {
         position: relative;
         width: 100%;
@@ -343,31 +347,222 @@
         }
       }
     }
+    .pagination-container {
+      text-align: center;
+      .swiper-pagination {
+        .swiper-pagination-bullet {
+          min-width: 27px;
+          height: 27px;
+          line-height: 27px;
+          font-size: 19px;
+          font-weight: 900;
+          border: 0;
+          background-color: transparent;
+          color: #4e4e4e;
+          padding: 0;
+        }
+        .swiper-pagination-bullet-active {
+          border-radius: 50%;
+          color: #ffffff;
+          background-color: #346af3;
+          font-size: 19px;
+        }
+      }
+      .swiper-button-prev,
+      .swiper-button-next {
+        position: static;
+        top: auto;
+        right: auto;
+        left: auto;
+        display: inline-block;
+      }
+      .swiper-button-prev {}
+      .swiper-button-next {}
+    }
+  }
+}
+/* E 영어완성 - 알파벳 */
+
+/* S 영어완성 - 파닉스 */
+.wrap_english {
+  .tab_content {
+    &.phonics {
+      .side_menu {
+        float: left;
+        width: 186px;
+        height: 603px;
+        padding-left: 6px;
+        ul {
+          width: 100%;
+          height: 100%;
+          background-color: #fbc441;
+          border-radius: 0 0 0 15px;
+          li {
+            width: 100%;
+            height: 83px;
+            border-bottom: 1px solid #f1a831;
+            border-top: 1px solid #fdd477;
+            a {
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+              height: 100%;
+              text-align: center;
+              font-size: 23px;
+              font-weight: 900;
+              color: #4d0000;
+              align-items: center;
+              justify-content: center;
+              span {
+                display: block;
+                font-size: 22px;
+                font-weight: bold;
+                padding-top: 3px;
+              }
+            }
+            &.active {
+              background-color: #8529cd;
+              a {
+                color: #ffffff;
+                font-size: 25px;
+                span {
+                  font-size: 22px;
+                }
+              }
+            }
+            &:first-child {
+              height: 55px;
+              border-top: 0;
+            }
+          }
+        }
+      }
+      .menu-content {
+        float: left;
+        overflow: hidden;
+        width: 1068px;
+        height: 603px;
+        border-radius: 0 0 20px 0;
+        .ph-intro {
+          position: relative;
+          width: 1074px;
+          height: 625px;
+          background-image: url("../img/element/english/phonics/info.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: -22px -19px;
+          .wrap-btn {
+            position: absolute;
+            right: 48px;
+            top: 27px;
+            .btn-reading {
+              display: block;
+              width: 265.5px;
+              height: 53px;
+              background-image: url("../img/element/english/phonics/btn_reading.png");
+              background-repeat: no-repeat;
+              background-size: cover;
+              margin-bottom: 6px;
+            }
+            .btn-word {
+              display: block;
+              width: 265.5px;
+              height: 53px;
+              background-image: url("../img/element/english/phonics/btn_word.png");
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.phonics_table {
+  position: relative;
+  width: 1280px;
+  height: 752px;
+  background: url("../img/element/english/phonics/phonics_table.png") no-repeat center;
+  background-size: cover;
+
+  .area_text {
+    padding: 22px 75px 0 334px;
+    p {
+      position: relative;
+      font-family: "Noto Sans CJK KR Medium";
+      font-weight: 500;
+      font-size: 22px;
+      color: #1f1f1f;
+      line-height: 23px;
+      margin-bottom: 12px;
+      letter-spacing: -.7px;
+      padding-left: 33px;
+
+      i {
+        position: absolute;
+        left: 0;
+        top: 4px;
+      }
+      span {
+        display: block;
+        font-family: "Noto Sans CJK KR Medium";
+        font-weight: 500;
+        font-size: 18px;
+        color: #7d7d7d;
+        margin-top: 2px;
+      }
+    }
+  }
+  .btn-close {
+    position: absolute;
+    display: block;
+    top: 12px;
+    right: 9px;
+    width: 45px;
+    height: 45px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
+/* E 영어완성 - 파닉스 */
+
 /* 아이콘 */
-i.i-tv {
-  display: inline-block;
-  background: url("../img/element/english/common/i_tv.png") no-repeat center;
-  width: 16.5px;
-  height: 17.5px;
-  background-size: contain;
-  vertical-align: middle;
+.wrap_english {
+  i.i-tv {
+    display: inline-block;
+    background: url("../img/element/english/common/i_tv.png") no-repeat center;
+    width: 16.5px;
+    height: 17.5px;
+    background-size: contain;
+    vertical-align: middle;
+  }
+  i.i-arrow-left {
+    display: inline-block;
+    background: url("../img/element/english/common/arrow_left.png") no-repeat center;
+    width: 12px;
+    height: 16.5px;
+    background-size: contain;
+    vertical-align: middle;
+  }
+  i.i-arrow-right {
+    display: inline-block;
+    background: url("../img/element/english/common/arrow_right.png") no-repeat center;
+    width: 12px;
+    height: 16.5px;
+    background-size: contain;
+    vertical-align: middle;
+  }
 }
-i.i-arrow-left {
-  display: inline-block;
-  background: url("../img/element/english/common/arrow_left.png") no-repeat center;
-  width: 12px;
-  height: 16.5px;
-  background-size: contain;
-  vertical-align: middle;
-}
-i.i-arrow-right {
-  display: inline-block;
-  background: url("../img/element/english/common/arrow_right.png") no-repeat center;
-  width: 12px;
-  height: 16.5px;
-  background-size: contain;
-  vertical-align: middle;
+.phonics_table {
+  i.i-check {
+    display: inline-block;
+    background: url("../img/element/english/phonics/i_check.png") no-repeat center;
+    width: 21.5px;
+    height: 15px;
+    background-size: contain;
+    vertical-align: middle;
+  }
 }
