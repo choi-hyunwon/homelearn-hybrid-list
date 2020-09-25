@@ -55,10 +55,12 @@
 @import "fonts/NotoSansCJK";
 @import "fonts/Jalnan";
 @import "fonts/godo";
-//@import "fonts/fontAwesomepro";
+
+// ui
+@import "jquery.mCustomScrollbar";
+@import "swiper.min";
 
 // pages
-@import "pages/_jquery.mCustomScrollbar";
 @import "pages/home";
 @import "pages/globalLeadership";
 @import "pages/math";

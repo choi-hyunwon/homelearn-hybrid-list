@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <!--
-  todo! scroll add or not ?
   * psd와 스크린샷이 상이함
-  * btn-bingbing 클릭하면 ㄱㄷ3ㅎ2ㅠ4ㄹㄱ5ㅌ?
+  * btn-bingbing 클릭하면 어떻게?
 -->
 <html lang="ko">
 @@include("include/head.html", { title : "수학경시" })
@@ -24,7 +23,7 @@
           <li data-value="9">5학년 1학기</li>
           <li data-value="10">5학년 2학기</li>
           <li data-value="11">6학년 1학기</li>
-          <li data-value="12">6학년 2학기</li>
+          <li class="active" data-value="12">6학년 2학기</li>
         </ul>
         <input type="hidden" name="customSelect" value="4">
       </div>
@@ -34,6 +33,7 @@
       <div class="aside_bg"></div>
       <div class="mContent">
         <div class="desc">100점을 맞거나 틀린 문제 다시풀기를 하면 <i class="i-star"></i>1개</div>
+        <div class="scroll transparent _scrollRight">
           <ul>
             <li>
               <div class="num">1단원<span class="cbadge first">1회차</span></div>
@@ -73,10 +73,16 @@
               </div>
             </li>
           </ul>
+        </div>
       </div>
     </div>
     <a href="#" class="btn-bingbing"><img src="../img/element/math/category/btn_bingbing.png" alt="" width="201" height="111"></a>
   </div>
 </div>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("._scrollRight").mCustomScrollbar();
+  })
+</script>
 </body>
 </html>
