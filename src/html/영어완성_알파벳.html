@@ -2,6 +2,7 @@
 <html lang="ko">
 @@include("include/head.html", { title : "영어완성" })
 <body>
+<!--<img src="../../doc/01_초등_캡처/초등%20영어완성%20캡쳐/Screenshot_20200908-133721.png" class="imgHide" alt="">-->
 <div class="wrap">
   <div class="wrap_english">
     <div class="area_top">
@@ -25,7 +26,7 @@
       <div class="area-title">
         <div class="tit">뚝딱뚝딱 ABC<span class="total">(전체 26강)</span></div>
       </div>
-      <div class="swiper-container">
+      <div class="swiper-container _alphabetSlider">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="list-class">
@@ -113,12 +114,6 @@
           <div class="swiper-slide">Slide 2</div>
           <div class="swiper-slide">Slide 3</div>
           <div class="swiper-slide">Slide 4</div>
-          <div class="swiper-slide">Slide 5</div>
-          <div class="swiper-slide">Slide 6</div>
-          <div class="swiper-slide">Slide 7</div>
-          <div class="swiper-slide">Slide 8</div>
-          <div class="swiper-slide">Slide 9</div>
-          <div class="swiper-slide">Slide 10</div>
         </div>
         <div class="pagination-container">
           <div class="swiper-button-prev"></div>
@@ -126,53 +121,6 @@
           <div class="swiper-button-next"></div>
         </div>
       </div>
-      <script>
-        var swiper = new Swiper('.swiper-container', {
-          navigation: {
-            nextEl: '.btn-next',
-            prevEl: '.btn-prev',
-          },
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-            renderBullet: function (index, className) {
-              return '<span class="' + className + '">' + (index + 1) + '</span>';
-            },
-          },
-        });
-      </script>
-<!--      <div class="area-pagination">-->
-<!--        <ul class="pagination pagination-circle" id="pagination">-->
-<!--          <li class="page-item disabled">-->
-<!--            <a class="page-link page-arrow" aria-label="Previous">-->
-<!--              <span aria-hidden="true"></span>-->
-<!--            </a>-->
-<!--          </li>-->
-<!--          <li class="page-item active"><a class="page-link">1</a></li>-->
-<!--          <li class="page-item"><a class="page-link">2</a></li>-->
-<!--          <li class="page-item"><a class="page-link">3</a></li>-->
-<!--          <li class="page-item"><a class="page-link">4</a></li>-->
-<!--          <li class="page-item">-->
-<!--            <a class="page-link page-arrow" aria-label="Next">-->
-<!--              <span aria-hidden="true"></span>-->
-<!--            </a>-->
-<!--          </li>-->
-<!--        </ul>-->
-<!--      </div>-->
-<!--      <script>-->
-<!--        $('#pagination').twbsPagination({-->
-<!--            totalPages: 10,-->
-<!--            visiblePages: 4,-->
-<!--            first: '',-->
-<!--            prev: '<i class="i-arrow-left"><span class="sr-only">prev</span>',-->
-<!--            next: '<i class="i-arrow-right"><span class="sr-only">next</span>',-->
-<!--            last :'',-->
-<!--            onPageClick: function (event, page) {-->
-<!--              $('#page-content')-->
-<!--                .text('Page ' + page)-->
-<!--            }-->
-<!--          })-->
-<!--      </script>-->
     </div>
   </div>
 </div>
@@ -186,6 +134,21 @@
       $(this).parent().addClass('active');
     });
   })
+</script>
+<script>
+  var swiper = new Swiper('._alphabetSlider', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + '</span>';
+      },
+    },
+  });
 </script>
 </body>
 </html>

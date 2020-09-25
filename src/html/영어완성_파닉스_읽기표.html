@@ -1,23 +1,74 @@
 <!DOCTYPE html>
 <html lang="ko">
 @@include("include/head.html", { title : "영어완성" })
+<!--
+http://www.asiafont.com/asfont/m_view.php?ps_db=sample&ps_boid=57&ps_page=1&ps_sele=subject&ps_ques=%BE%C6%BD%C3%BE%C6&ps_line=&ps_choi=&ps_divi=
+KoreanAGD E 폰트 저작권 필요
+-->
 <body>
-<!--<img src="../../doc/01_초등_캡처/초등%20영어완성%20캡쳐/Screenshot_20200908-133736.png" class="imgHide" alt="">-->
+<!--<img src="../../doc/01_초등_캡처/초등%20영어완성%20캡쳐/Screenshot_20200908-133745.png" class="imgHide" alt="">-->
 <div class="wrap">
-  <div class="phonics_table">
+  <div class="phonics_word_list">
     <div class="area_text">
       <p>
-        <i class="i-check"></i>
-        한글 읽기표와 같은 방식으로 기본적인 파닉스 규칙을 이해하기 쉽도록 한글 표기로 만든 것입니다.
-        <span>(자음+모음의 기본적인 소리 표기이며, 영어 규칙의 예외 사항이 모두 포함된 것은 아닙니다.)</span>
+        <i class="i-check"></i>홈런 파닉스에서 배우는 전체 단어 리스트입니다.
       </p>
       <p>
         <i class="i-check"></i>
-        학부모 홈페이지 > 학습자료실 > 특별학습자료-기타학습교안 자료실에서 출력하여 가정에서<br/> 활용하실 수 있습니다.
+        학부모 홈페이지 > 학습자료실 > 특별학습자료-기타학습교안 자료실에서<br/>
+        ‘파닉스’ 클릭하시면, 파닉스 단어 리스트 및 플래시 카드를 출력하여 가정에서<br/>
+        활용하실 수 있습니다.
       </p>
     </div>
-    <a class="btn-close" href="#"><img src="../img/element/english/phonics/phonics_table_close.png" alt=""></a>
+    <a class="btn-close" href="#"><img src="../img/element/english/phonics/word_list_close.png" alt=""></a>
+    <div class="tab-menu _tabMenu">
+      <ul class="clearfix">
+        <li class="active">
+          <a href="#">
+            <span>The Alphabet</span>
+            <span>알파벳</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>Short Vowels</span>
+            <span>단모음</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>Long Vowels</span>
+            <span>장모음</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>Letter Combinations</span>
+            <span>이중자모음</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="tab-content _tabContent">
+      <div class="scroll _scrollRight">
+        <div style="width: 100%;height: 1000px;background-color: pink"></div>
+      </div>
+    </div>
   </div>
 </div>
+<script>
+  $(document).ready(function () {
+    $("._scrollRight").mCustomScrollbar({
+      theme: "dark"
+    });
+    // 상단 탭
+    $('._tabMenu li a').click(function(){
+      $("._tabContent").removeClass('active');
+      $("._tabContent[data-id='"+$(this).attr('data-id')+"']").addClass("active");
+      $("._tabMenu li a").parent().removeClass('active');
+      $(this).parent().addClass('active');
+    });
+  })
+</script>
 </body>
 </html>

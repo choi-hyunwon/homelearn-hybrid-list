@@ -1,37 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
 @@include("include/head.html", { title : "마스연산" })
-<script type="text/javascript">
-  $(document).ready(function(){
-    $("._menuScroll").mCustomScrollbar({
-      theme: "dark"
-    });
-    $("._panelScroll").mCustomScrollbar({
-      theme: "dark"
-    });
-    // 상단 탭
-    $('._tabTop li a').click(function(){
-      $("._tabContent").removeClass('active');
-      $("._tabContent[data-id='"+$(this).attr('data-id')+"']").addClass("active");
-      $("._tabTop li a").parent().removeClass('active');
-      $(this).parent().addClass('active');
-    });
-    // 단계 탭
-    $('._tabStep li a').click(function(){
-      $("._tabMenu").removeClass('active');
-      $("._tabMenu[data-id='"+$(this).attr('data-id')+"']").addClass("active");
-      $("._tabStep li a").parent().removeClass('active');
-      $(this).parent().addClass('active');
-    });
-    // 메뉴 탭
-    $('._tabMenu li > a').click(function(){
-      $("._tabPanel").removeClass('active');
-      $("._tabPanel[data-id='"+$(this).attr('data-id')+"']").addClass("active");
-      $("._tabMenu li > a").parent().removeClass('active');
-      $(this).parent().addClass('active');
-    });
-  })
-</script>
 <body>
 <div class="wrap">
   <div class="wrap-mas">
@@ -11230,5 +11199,36 @@
     </div>
   </div>
 </div>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("._menuScroll").mCustomScrollbar({
+      theme: "dark"
+    });
+    $("._panelScroll").mCustomScrollbar({
+      theme: "dark"
+    });
+    // 상단 탭
+    $('._tabTop li a').click(function(){
+      $("._tabContent").removeClass('active');
+      $("._tabContent[data-id='"+$(this).attr('data-id')+"']").addClass("active");
+      $("._tabTop li a").parent().removeClass('active');
+      $(this).parent().addClass('active');
+    });
+    // 단계 탭
+    $('._tabStep li a').click(function(){
+      $("._tabMenu").removeClass('active');
+      $("._tabMenu[data-id='"+$(this).attr('data-id')+"']").addClass("active");
+      $("._tabStep li a").parent().removeClass('active');
+      $(this).parent().addClass('active');
+    });
+    // 메뉴 탭
+    $('._tabMenu li > a').click(function(){
+      $("._tabPanel").removeClass('active');
+      $("._tabPanel[data-id='"+$(this).attr('data-id')+"']").addClass("active");
+      $("._tabMenu li > a").parent().removeClass('active');
+      $(this).parent().addClass('active');
+    });
+  })
+</script>
 </body>
 </html>
