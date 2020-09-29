@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include("include/head.html", { title : "특별학습" })
+<body>
+<img src="../../doc/01_초등_캡처/초등%20특별학습%20캡쳐/Screenshot_20200908-134126.png" class="imgHide" alt="">
+<div class="wrap_flex wrap_special">
+  <div class="semester_select spec-bg">
+    <div class="wrap_header">
+      <div class="area-left">
+        <div class="tit_logo"><span class="sr-only">홈런픽</span></div>
+      </div>
+      <div class="area-right">
+        <div class="study_guide spec-label-bg"><a href="#" class="d-block">학습안내</a></div>
+        <div class="btn-close"><span class="sr-only">X</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="homeLearnPick">
+    <div class="main-bg">
+      <a href="#">
+        <img src="../img/element/special/temp/m_banner.png" alt="">
+        <span class="badge-pick"><img src="../img/element/special/homelearnpick/badge_pick.png" alt=""></span>
+      </a>
+    </div>
+    <div class="swiper-container _homeLearnPickSlider">
+      <p class="slider-title">지난 홈런픽</p>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+          <div class="swiper-slide">Slide 10</div>
+        </div>
+        <div class="pagination-container">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+  </div>
+</div>
+<script>
+  var swiper = new Swiper('._homeLearnPickSlider', {
+    slidesPerView: 4,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+</body>
+</html>

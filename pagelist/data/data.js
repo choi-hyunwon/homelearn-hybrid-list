@@ -91,5 +91,88 @@ data.english = {
       'category': '영어완성',
       'page': '알파벳'
     },
+    {
+      'stateClass': 'complete',
+      'url': '영어완성_파닉스_학습안내',
+      'category': '영어완성',
+      'page': '파닉스_학습안내'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '영어완성_파닉스_알파벳',
+      'category': '영어완성',
+      'page': '파닉스_알파벳'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '영어완성_파닉스_읽기표',
+      'category': '영어완성',
+      'page': '파닉스_읽기표'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '영어완성_파닉스_단어리스트',
+      'category': '영어완성',
+      'page': '파닉스_단어리스트'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '영어완성_영단어암기_학습안내',
+      'category': '영어완성',
+      'page': '영단어암기_학습안내'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '영어완성_영단어암기',
+      'category': '영어완성',
+      'page': '영단어암기'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '영어완성_영역별학습',
+      'category': '영어완성',
+      'page': '영역별학습'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '영어완성_영어교과강의',
+      'category': '영어완성',
+      'page': '영어교과강의'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '영어완성_영어신문',
+      'category': '영어완성',
+      'page': '영어신문'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '영어완성_영어동화',
+      'category': '영어완성',
+      'page': '영어동화'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '영어완성_영어송',
+      'category': '영어완성',
+      'page': '영어송'
+    },
+    {
+      'stateClass': 'complete',
+      'url': '영어완성_인기DVD',
+      'category': '영어완성',
+      'page': '인기DVD'
+    },
+  ]
+};
+data.special = {
+  'title': '특별학습',
+  'list': [
+    {
+      'stateClass': 'complete',
+      'url': '특별학습_홈',
+      'category': '특별학습',
+      'page': '홈'
+    },
   ]
 };
